@@ -12,8 +12,6 @@ import java.util.List;
 public interface MyTableDao {
     @Query("SELECT * FROM Entit ORDER BY id DESC")
     List<Entit> DescendingOrder();
-    @Delete
-    void DeleteEntity(Entit entit);
     @Insert
     void InsertEntity(Entit entit);
 }

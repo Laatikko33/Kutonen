@@ -39,18 +39,9 @@ public class Adapteri extends ArrayAdapter<Entit> {
         TextView textView1 = view.findViewById(R.id.teksti1);
         TextView textView2 = view.findViewById(R.id.teksti2);
         TextView textView3 = view.findViewById(R.id.teksti3);
-        Button button = view.findViewById(R.id.Button2);
         textView1.setText(String.valueOf(dataset.get(position).id));
         textView2.setText(dataset.get(position).tekst);
         textView3.setText(dataset.get(position).aika);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //dao.DeleteEntity(Entit entit);
-            }
-        });
-
-
         return view;
     }
 }
